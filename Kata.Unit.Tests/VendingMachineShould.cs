@@ -18,22 +18,11 @@ public class VendingMachineShould
     }
 
     [Fact]
-    public void insert_a_new_coin()
-    {
-        var vendingMachine = new VendingMachine();
-
-        vendingMachine.insertCoin(1.0);
-
-        var expectedAmount = 1.0;
-        vendingMachine.amount().Should().Be(expectedAmount);
-    }
-
-    [Fact]
     public void insert_a_valid_coin()
     {
         var vendingMachine = new VendingMachine();
         
-        vendingMachine.insertCoin2(1.0, "nickels");
+        vendingMachine.insertCoin(1.0, "nickels");
 
         vendingMachine.amount().Should().Be(1.0);
     }
