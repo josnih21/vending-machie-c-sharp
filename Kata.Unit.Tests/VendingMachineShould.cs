@@ -21,7 +21,7 @@ public class VendingMachineShould
     [Theory]
     [InlineData(1.0, "nickels")]
     [InlineData(0.1, "dimes")]
-    [InlineData(2.0, "quarter")]
+    [InlineData(2.0, "quarters")]
     public void insert_a_valid_coin(double coinValue, string coinType)
     {
         var vendingMachine = new VendingMachine();

@@ -19,5 +19,10 @@ public class VendingMachine
         {
             currentAmount += coinValue;
         }
+
+        if (coinType == "quarters")
+        {
+            currentAmount += coinValue;
+        }
     }
 }
