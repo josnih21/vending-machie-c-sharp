@@ -2,8 +2,14 @@
 
 public class VendingMachine
 {
-    public static string Wrap(string text, int columnWidth)
+    private double currentAmount = 0.0;
+    public double amount()
     {
-        return null;
+        return currentAmount;
+    }
+
+    public void insertCoin(double coinValue)
+    {
+        currentAmount += coinValue;
     }
 }
