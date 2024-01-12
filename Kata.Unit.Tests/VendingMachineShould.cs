@@ -1,6 +1,6 @@
 namespace Kata.Unit.Tests;
 
-public class DummyTest
+public class VendingMachineShould
 {
     [Fact]
     public void Dummy()
