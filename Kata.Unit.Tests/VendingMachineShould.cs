@@ -13,7 +13,7 @@ public class VendingMachineShould
     {
         var vendingMachine = new VendingMachine();
 
-        var initialAmount = vendingMachine.amount();
+        var initialAmount = vendingMachine.Amount();
         initialAmount.Should().Be(0);
     }
     
@@ -26,9 +26,9 @@ public class VendingMachineShould
     {
         var vendingMachine = new VendingMachine();
         
-        vendingMachine.insertCoin(coinValue, coinType);
+        vendingMachine.InsertCoin(coinValue, coinType);
 
-        vendingMachine.amount().Should().Be(coinValue);
+        vendingMachine.Amount().Should().Be(coinValue);
     }
 
 }

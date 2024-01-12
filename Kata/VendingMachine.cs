@@ -3,12 +3,12 @@
 public class VendingMachine
 {
     private double currentAmount = 0.0;
-    public double amount()
+    public double Amount()
     {
         return currentAmount;
     }
 
-    public void insertCoin(double coinValue, string coinType)
+    public void InsertCoin(double coinValue, string coinType)
     {
         if (coinType == "nickels")
         {
