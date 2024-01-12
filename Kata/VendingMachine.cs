@@ -12,4 +12,12 @@ public class VendingMachine
     {
         currentAmount += coinValue;
     }
+
+    public void insertCoin2(double coinValue, string coinType)
+    {
+        if (coinType == "nickels")
+        {
+            currentAmount += coinValue;
+        }
+    }
 }
