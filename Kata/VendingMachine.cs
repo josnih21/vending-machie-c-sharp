@@ -1,6 +1,6 @@
 ﻿namespace Kata;
 
-public class Wrapper
+public class VendingMachine
 {
     public static string Wrap(string text, int columnWidth)
     {
