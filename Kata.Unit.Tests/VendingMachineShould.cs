@@ -3,7 +3,8 @@ namespace Kata.Unit.Tests;
 
 /*TODO:
    - Maquina no recibe ninguna moneda y te muestra -- Amount = 0.0
-   - Maquina recibe una moneda valida y te da su -- Amount, suma total 
+   - Maquina recibe una moneda valida y te da su -- Amount, suma total
+   - 
  */
 public class VendingMachineShould
 {
@@ -23,7 +24,7 @@ public class VendingMachineShould
 
         vendingMachine.insertCoin(1.0);
 
-        var expected = 1.0;
-        vendingMachine.amount().Should().Be(expected);
+        var expectedAmount = 1.0;
+        vendingMachine.amount().Should().Be(expectedAmount);
     }
 }
