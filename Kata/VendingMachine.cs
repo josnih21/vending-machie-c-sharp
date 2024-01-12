@@ -14,5 +14,10 @@ public class VendingMachine
         {
             currentAmount += coinValue;
         }
+
+        if (coinType == "dimes")
+        {
+            currentAmount += coinValue;
+        }
     }
 }
