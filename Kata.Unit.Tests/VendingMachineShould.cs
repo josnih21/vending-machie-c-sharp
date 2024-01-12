@@ -16,16 +16,19 @@ public class VendingMachineShould
         var initialAmount = vendingMachine.amount();
         initialAmount.Should().Be(0);
     }
-
-    [Fact]
-    public void insert_a_valid_coin()
+    
+    
+    [Theory]
+    [InlineData(1.0, "nickels")]
+    [InlineData(0.1, "dimes")]
+    [InlineData(2.0, "quarter")]
+    public void insert_a_valid_coin(double coinValue, string coinType)
     {
         var vendingMachine = new VendingMachine();
         
-        vendingMachine.insertCoin(1.0, "nickels");
-        vendingMachine.insertCoin(0.1, "dimes");
+        vendingMachine.insertCoin(coinValue, coinType);
 
-        vendingMachine.amount().Should().Be(1.1);
+        vendingMachine.amount().Should().Be(coinValue);
     }
 
 }
