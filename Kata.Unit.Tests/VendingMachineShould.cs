@@ -23,8 +23,9 @@ public class VendingMachineShould
         var vendingMachine = new VendingMachine();
         
         vendingMachine.insertCoin(1.0, "nickels");
+        vendingMachine.insertCoin(0.1, "dimes");
 
-        vendingMachine.amount().Should().Be(1.0);
+        vendingMachine.amount().Should().Be(1.1);
     }
 
 }
